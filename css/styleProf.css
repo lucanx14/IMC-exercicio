@@ -1,0 +1,79 @@
+:root{
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker:rgb(9, 48, 56);
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    background-color: var(--primary-color) ;
+}
+.container{
+    max-width: 640px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin: 5rem auto;
+    flex-flow: column nowrap;
+    padding: 1rem 2rem;
+}
+section .item-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem 0 0;
+    font-size: 1.8rem;
+    
+}
+section div ul li{
+    list-style: none;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+form input{
+    font-size: 2rem;
+    height: 3.5rem;
+    padding: 0 1.5rem;
+}
+form input:focus{
+    border: 2px solid var(--primary-color);
+    outline: 0.1rem solid var(--primary-color);
+    transition: ease-in-out 150ms;
+}
+form button{
+    border: none;
+    background-color: var(--primary-color);
+    font-size: 2.8rem;
+    color: white;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+form button:hover{
+    background-color: var(--primary-color-darker);
+    transition: ease-in-out 300ms;
+    box-shadow: 0.5rem 0.5rem var(--primary-color);
+}
+
+.paragrafo-resultado, .bad{
+    background-color: lightgreen;
+    padding: 10px 20px;
+    width: 100%;
+}
+.bad{
+    background-color: lightcoral;
+}
